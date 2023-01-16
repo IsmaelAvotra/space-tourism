@@ -1,0 +1,61 @@
+.destination {
+  min-height: 100vh;
+  background-image: url(../../assets/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-content {
+  padding: 0 8rem;
+  margin-top: 60px;
+}
+
+.description-content {
+  margin-top: 4rem;
+  padding: 0 2rem;
+  display: flex;
+  gap: 8rem;
+}
+
+.description-content .text ul {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.description-content .text .underline-indicators > * {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.description-content .text .underline-indicators > *:hover {
+  border-color: hsl(0 0% 100% / 50%);
+}
+
+.description-content .text ul li.active {
+  border-color: hsl(0 0% 100% / 100%);
+}
+
+.description-content .text h2 {
+  margin-bottom: 1rem;
+}
+
+.description-content .text .para {
+  margin-bottom: 2rem;
+}
+
+.text .underline {
+  width: 100%;
+  height: 1px;
+  background: #383b4b;
+  margin-bottom: 1.5rem;
+}
+
+.text .distance-travel {
+  display: flex;
+  gap: 5rem;
+}
+
+.text .distance-travel .subheading2 {
+  margin-bottom: 0.6rem;
+}

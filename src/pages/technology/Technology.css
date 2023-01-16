@@ -1,0 +1,72 @@
+.technology {
+  min-height: 100vh;
+  max-height: 100vh;
+  background: rgba(0, 0, 0, 0.25)
+    url(../../assets/technology/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.technology .section-content {
+  padding-right: 0;
+}
+
+.technology .techno-description {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.techno-description .text {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.indications div {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.indications div:hover {
+  border-color: var(--clr-white);
+}
+
+.indications div.active {
+  background-color: var(--clr-white);
+}
+
+.indications div p {
+  font-family: 'Bellefair';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: var(--clr-white);
+}
+
+.indications div.active p {
+  color: #0b0d17;
+}
+
+.text .terminology {
+  font-family: 'Barlow Condensed';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.text h3 {
+  margin-bottom: 1rem;
+}
