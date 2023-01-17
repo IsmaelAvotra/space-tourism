@@ -41,10 +41,16 @@ const Technology = () => {
             </div>
           </div>
           <div className='image'>
-            <img
-              src={technologies[indexTechno].images.portrait}
-              alt='technology image'
-            />
+            <picture>
+              <source
+                srcSet={technologies[indexTechno].images.landscape}
+                media='(max-width:1025px)'
+              />
+              <img
+                src={technologies[indexTechno].images.portrait}
+                alt='technology image'
+              />
+            </picture>
           </div>
         </div>
       </div>

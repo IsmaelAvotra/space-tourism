@@ -70,3 +70,50 @@
 .text h3 {
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 1300px) {
+  .technology .section-content {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .technology .section-content {
+    padding-left: 2rem;
+  }
+  .technology .techno-description {
+    margin-top: 6rem;
+    flex-direction: column-reverse;
+  }
+
+  .techno-description .text {
+    flex-direction: column;
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+  .indications {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .technology .techno-description {
+    padding-bottom: 4rem;
+    gap: 4rem;
+  }
+
+  .techno-description .text {
+    gap: 1rem;
+  }
+
+  .indications {
+    gap: 1rem;
+  }
+
+  .indications div {
+    width: 60px;
+    height: 60px;
+  }
+}

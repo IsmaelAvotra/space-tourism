@@ -66,3 +66,46 @@
 .large-btn:hover::after {
   transform: scale(1.4);
 }
+
+@media screen and (max-width: 1350px) {
+  .banner {
+    margin-left: 120px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .home {
+    background: url(../../assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner {
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-left: 0;
+  }
+  .banner .left {
+    text-align: center;
+    margin: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .banner {
+    flex-direction: column;
+    margin-top: 10rem;
+    gap: 8rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .banner {
+    margin-top: 5rem;
+    gap: 6rem;
+  }
+  .large-btn {
+    width: 220px;
+    height: 220px;
+  }
+}

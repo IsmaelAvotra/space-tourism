@@ -64,3 +64,69 @@
 .indicators div.active {
   opacity: 1;
 }
+
+/* ====================================
+MEDIA QUERIES
+=================================== */
+
+@media screen and (max-width: 1300px) {
+  .crew-description .image img {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .crew {
+    max-height: none;
+  }
+  .crew-description {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  .crew-description .text {
+    margin-top: 5rem;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 0rem;
+  }
+
+  .indicators {
+    margin-top: 3rem;
+    justify-content: center;
+  }
+
+  .crew-description .image {
+    flex: 1;
+    display: grid;
+    place-items: center;
+  }
+
+  .crew-description .image img {
+    width: 115%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .crew {
+    background: rgba(0, 0, 0, 0.4)
+      url(../../assets/crew/background-crew-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+
+  .crew .section-content {
+    padding: 0 2rem;
+  }
+  /* 
+  .crew .text .role {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .crew .text .name {
+    font-size: 40px;
+    line-height: 46px;
+  } */
+}
