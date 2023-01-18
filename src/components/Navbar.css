@@ -94,19 +94,20 @@ ul li {
 
 @media screen and (max-width: 420px) {
   .navbar .links {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
     width: 70%;
     z-index: 2;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     transition: 0.4s;
   }
 
-  .navbar .links.active {
-    transform: translateX(0);
+  .navbar .active {
+    /* transform: translateX(0); */
+    display: block;
   }
 
   .navbar .links ul {
