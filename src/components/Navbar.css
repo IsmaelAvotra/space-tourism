@@ -122,7 +122,7 @@ ul li {
     overflow: hidden;
   }
 
-  .underline-indicators > * {
+  .navbar .underline-indicators > * {
     padding: 0.6em 0;
     border-bottom: none;
   }
