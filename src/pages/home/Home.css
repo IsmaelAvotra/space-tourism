@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  overflow: hidden;
 }
 
 .banner {
@@ -107,5 +108,50 @@
   .large-btn {
     width: 220px;
     height: 220px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home {
+    background: url(../../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner {
+    margin: 0 1rem;
+    margin-top: 3rem;
+    gap: 5rem;
+  }
+
+  .banner .left {
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner .left h5,
+  .banner .left h1 {
+    margin-bottom: 1rem;
+  }
+
+  .banner .left h5 {
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+
+  .banner .left h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .banner .left p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .large-btn {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
   }
 }

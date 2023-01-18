@@ -87,7 +87,6 @@ MEDIA QUERIES
   .crew-description .text {
     margin-top: 5rem;
     text-align: center;
-    flex: 1;
     margin-bottom: 0rem;
   }
 
@@ -119,14 +118,74 @@ MEDIA QUERIES
   .crew .section-content {
     padding: 0 2rem;
   }
-  /* 
+}
+
+@media screen and (max-width: 420px) {
+  .crew {
+    background: rgba(0, 0, 0, 0.4)
+      url(../../assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+
+  .crew .title-section {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .crew .section-content {
+    padding: 0 1rem;
+    margin-top: 2rem;
+  }
+
+  .crew-description {
+    padding: 2rem 0;
+    flex-direction: column-reverse;
+    gap: 0;
+    padding-bottom: 3rem;
+  }
+
+  .crew-description .image {
+    border-bottom: 1px solid #383b4b;
+  }
+
+  .crew-description .image img {
+    width: 100%;
+  }
+
+  .indicators {
+    margin-top: 0;
+    margin-bottom: 0rem;
+  }
+
+  .indicators div {
+    width: 10px;
+    height: 10px;
+  }
+
+  .crew-description .text {
+    flex-direction: column-reverse;
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
   .crew .text .role {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 18px;
+  }
+
+  .crew .text .name {
     font-size: 24px;
     line-height: 28px;
   }
 
-  .crew .text .name {
-    font-size: 40px;
-    line-height: 46px;
-  } */
+  .crew .text p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }

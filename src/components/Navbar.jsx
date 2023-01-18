@@ -1,17 +1,20 @@
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
-
 import './Navbar.css'
 import logo from '../assets/shared/logo.svg'
+import hamburger from '../assets/shared/icon-hamburger.svg'
+import close from '../assets/shared/icon-close.svg'
 
 const Navbar = () => {
-  const [isActiveNav, setIsActiveNav] = useState(0)
+  const [openNav, setOpenNav] = useState(false)
   return (
     <div className='navbar'>
       <div className='logo'>
-        <img src={logo} alt='logo' />
+        <Link to='/'>
+          <img src={logo} alt='logo' />
+        </Link>
       </div>
-      <div className='links'>
+      <div className={openNav ? 'links active' : 'links'}>
         <nav>
           <ul className='underline-indicators'>
             <li>
@@ -36,6 +39,13 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+      </div>
+      <div className='menu' onClick={() => setOpenNav(!openNav)}>
+        {openNav ? (
+          <img src={close} alt='close icon' />
+        ) : (
+          <img src={hamburger} alt='menu icon' />
+        )}
       </div>
     </div>
   )

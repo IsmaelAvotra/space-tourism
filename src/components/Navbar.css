@@ -59,6 +59,10 @@ ul li {
   margin-right: 12px;
 }
 
+.navbar .menu {
+  display: none;
+}
+
 @media screen and (max-width: 1350px) {
   .navbar .links::before {
     display: none;
@@ -85,5 +89,51 @@ ul li {
   }
   .navbar ul {
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navbar .links {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: 0.4s;
+  }
+
+  .navbar .links.active {
+    transform: translateX(0);
+  }
+
+  .navbar .links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 40%;
+  }
+
+  .navbar {
+    padding: 1rem;
+    overflow: hidden;
+  }
+
+  .underline-indicators > * {
+    padding: 0.6em 0;
+    border-bottom: none;
+  }
+
+  .navbar .menu {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
   }
 }

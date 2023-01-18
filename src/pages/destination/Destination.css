@@ -65,7 +65,7 @@ MEDIA QUERIES
 =================================== */
 
 @media screen and (max-width: 1300px) {
-  .section-content {
+  .destination .section-content {
     padding: 0 6rem;
   }
   .description-content {
@@ -74,7 +74,7 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 1050px) {
-  .section-content {
+  .destination .section-content {
     margin-top: 5rem;
   }
   .description-content {
@@ -103,5 +103,60 @@ MEDIA QUERIES
     background: url(../../assets/destination/background-destination-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .destination {
+    background: url(../../assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .destination .title-section {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .destination .section-content {
+    padding: 0 1rem;
+    margin-top: 2rem;
+  }
+
+  .destination .description-content {
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .description-content .text h2 {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 0rem;
+  }
+
+  .description-content .text .underline-indicators {
+    margin-bottom: 1rem;
+  }
+
+  .description-content .text .para {
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 1rem;
+  }
+
+  .text .underline {
+    margin-bottom: 1rem;
+  }
+
+  .text .distance-travel {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .description-content .image img {
+    width: 200px;
+    height: 200px;
   }
 }

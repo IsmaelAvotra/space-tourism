@@ -1,6 +1,5 @@
 .technology {
   min-height: 100vh;
-  max-height: 100vh;
   background: rgba(0, 0, 0, 0.25)
     url(../../assets/technology/background-technology-desktop.jpg);
   background-repeat: no-repeat;
@@ -79,16 +78,24 @@
 
 @media screen and (max-width: 1025px) {
   .technology .section-content {
-    padding-left: 2rem;
+    padding-left: 0rem;
   }
+
+  .technology .title-section {
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+
   .technology .techno-description {
     margin-top: 6rem;
     flex-direction: column-reverse;
+    padding-bottom: 4rem;
   }
 
   .techno-description .text {
     flex-direction: column;
     padding: 0 4rem;
+    gap: 2rem;
     text-align: center;
   }
 
@@ -100,8 +107,11 @@
 
 @media screen and (max-width: 850px) {
   .technology .techno-description {
-    padding-bottom: 4rem;
     gap: 4rem;
+  }
+
+  .technology .title-section {
+    margin-left: 2rem;
   }
 
   .techno-description .text {
@@ -115,5 +125,59 @@
   .indications div {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .technology .title-section {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-left: 0;
+  }
+
+  .technology .techno-description {
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+
+  .techno-description .text {
+    padding: 0 1rem;
+  }
+
+  .techno-description .image img {
+    width: 100%;
+  }
+
+  .indications {
+    margin-bottom: 1rem;
+  }
+
+  .indications div {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+
+  .indications div p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .text .terminology {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.4px;
+  }
+
+  .text h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .title-text p {
+    font-size: 15px;
+    line-height: 22px;
   }
 }

@@ -15,9 +15,11 @@ const Crew = () => {
         </h2>
         <div className='crew-description'>
           <div className='text'>
-            <h4 className='role'>{crew[indexIndicator].role}</h4>
-            <h3 className='name'>{crew[indexIndicator].name}</h3>
-            <p>{crew[indexIndicator].bio}</p>
+            <div className='text-col'>
+              <h4 className='role'>{crew[indexIndicator].role}</h4>
+              <h3 className='name'>{crew[indexIndicator].name}</h3>
+              <p>{crew[indexIndicator].bio}</p>
+            </div>
 
             <div className='indicators'>
               <div
