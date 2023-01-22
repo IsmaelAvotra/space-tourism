@@ -1,0 +1,57 @@
+.error-page {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.error-page .content {
+  text-align: center;
+}
+
+.error-page h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--second-clr);
+}
+
+.error-page svg {
+  color: #fff;
+}
+
+.error-page a {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.5rem;
+  color: var(--bg-clr);
+  border-radius: 0.2rem;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+
+.error-page a:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .error-page h4 {
+    font-size: 1.5rem;
+  }
+
+  .error-page a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .error-page h4 {
+    font-size: 1rem;
+  }
+  .error-page a {
+    font-size: 1rem;
+  }
+}

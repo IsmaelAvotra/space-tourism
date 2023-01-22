@@ -8,6 +8,7 @@ import Home from './pages/home/Home'
 import Destination from './pages/destination/Destination'
 import Crew from './pages/crew/Crew'
 import Technology from './pages/technology/Technology'
+import Error from './pages/error/Error'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/destination' element={<Destination />} />
           <Route path='/crew' element={<Crew />} />
           <Route path='/technology' element={<Technology />} />
+          <Route path='/*' element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>
